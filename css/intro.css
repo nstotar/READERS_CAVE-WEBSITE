@@ -1,0 +1,54 @@
+
+.home{
+    background: url(../img/images/banner-bg.jpg) no-repeat;
+    box-shadow: 4px 4px 5px rgb(9, 10, 10), -4px -4px 5px rgb(43, 41, 41);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.home .row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.home .row .content{
+    flex:1 1 42rem;
+}
+
+.home .row .books-slider{
+    flex:1 1 42rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.home .row .books-slider a img{
+    height: 22rem;
+}
+
+.home .row .books-slider a:hover img{
+    transform: scale(.9);
+}
+
+.home .row .books-slider .stand{
+    width:100%;
+    margin-top: -3rem;
+}
+
+.home .row .content h3{
+    /* color:var(--black); */
+    padding: 2rem;
+    width:800px;
+    color:rgb(220, 8, 8);
+    font-size: 600%;
+}
+
+.home .row .content p{
+    width:800px;
+    color:rgb(16, 203, 227);
+    font-size: 300%;
+    line-height: 2rem;
+    padding: 2rem;
+}

@@ -1,0 +1,108 @@
+body{
+  margin: 0;
+  padding: 10;
+  box-sizing: border-box;
+  /* display: flex; */
+
+}
+.product-card {
+  margin: 1rem;
+  display: block;
+  position: relative;
+  max-width: 300px;
+  width: 50%;
+  height: 50%;
+  border-radius: 25px;
+  border-left: 5% #333;
+  padding: 20px 20px 30px 40px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(15, 15, 15, 0.879);
+  z-index: 8;
+  overflow: hidden;
+  justify-items: center;
+}
+.product-card .logo-cart{
+  display: flex;
+  color: #171716;
+  align-items: center;
+  font-size: large;
+  font-weight:800;
+  font-family: 'Segoe UI';
+  justify-content:space-evenly;
+}
+.product-card .logo-cart i{
+  font-size: 27px;
+  color: #3311dc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.product-card .logo-cart i:hover{
+  color: rgb(51, 51, 51);
+}
+.product-card .main-images{
+  position:relative;
+  height: 30%;
+}
+.product-card .book-details p{
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  text-align: justify;
+
+}
+.product-card .button{
+  position: relative;
+  height: 50px;
+  width: 100%;
+  border-radius: 25px;
+  margin-top: 30px;
+  overflow: hidden;
+  justify-items: center;
+}
+
+ .product-card .button .button-layer button{
+  position: absolute; 
+  /* position: relative; */
+   height: 100%;
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  background-image:  linear-gradient(135deg,#9708CC, #43CBFF,#9708CC, #43CBFF );
+  transition: all 0.4s ease;
+  border-radius: 35PX;
+  font-weight: 600;
+  letter-spacing: 1px;
+} 
+.product-card .button .button-layer{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  background-image: linear-gradient(135deg,#08cc8e, #43CBFF,#08cc8e, #43CBFF );
+  font-weight: 600;
+  letter-spacing: 1px;
+ 
+} 
+ .button .button-layer button:hover{
+  /* height: 90%;
+  width: 100%;
+  left: -100%;
+ left: 23rem;
+  box-sizing: border-box; */
+  background-image: linear-gradient(135deg,#08cc8e, #43CBFF,#08cc8e, #43CBFF );
+  /* background-image: linear-gradient(135deg,#9708CC, #43CBFF,#9708CC, #43CBFF );  */
+  /* transition: all 0.4s ease; */
+   border-radius: 70PX;
+ } 
+
+.product-card:hover{
+background-image:  linear-gradient(135deg,#9708CC, #43CBFF,#9708CC, #43CBFF );
+font-size: large;
+font-weight: 700;
+
+}

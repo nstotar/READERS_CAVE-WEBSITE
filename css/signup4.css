@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Open+Sans:wght@300;400&family=Poppins:ital,wght@0,200;0,300;1,400&display=swap');
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+}
+
+body{
+   height: 125vh;
+   background-color: #32b7db;
+   background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+   color: white;
+}
+
+.card{
+   height: 75vh;
+   width: auto;
+   background-color: transparent;
+   position: relative;
+   margin: 84px;
+   display: flex;
+   justify-content: center;
+   border-radius: 16px;
+   margin-top: 18px;
+}
+
+.info{
+   height: 126%;
+   width: 41rem;
+   background-color: rgb(163, 57, 57);
+   border-radius:  16px 0 0 16px;
+}
+
+/* ////// */
+
+.form-container{
+   height: 126%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+   border-radius: 0px 16px 16px 0;
+   background-color: #7f53ac; 
+   background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+}
+
+
+.form-container form{
+   padding:20px;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0,0,0,.1);
+   background: #fff;
+   text-align: center;
+   width: 500px;
+   position: relative;
+   padding-bottom: 44px;
+}
+
+.form-container form h3{
+   font-size: 30px;
+   text-transform: uppercase;
+   margin-bottom: 27px;
+   color:#333;
+}
+
+
+.form-container form input,
+.form-container form select{
+   width: 100%;
+   padding:10px 15px;
+   font-size: 17px;
+   margin:8px 0;
+   background: #eee;
+   border-radius: 5px;
+}
+
+.form-container form select option{
+   background: #fff;
+}
+
+.form-container form .form-btn{
+   background: #2c84b4;
+   color:white;
+   text-transform: capitalize;
+   font-size: 20px;
+   font-weight: bolder;
+   cursor: pointer;
+}
+
+.form-container form .form-btn:hover{
+   background: #329dd5;
+   color:#fff;
+}
+
+.form-container form p{
+   margin-top: 10px;
+   font-size: 20px;
+   color:#333;
+}
+
+ .forget-p{
+   font-size: 15px;
+   position: absolute;
+   bottom: 25px;
+   left: 178px;   
+   text-decoration: underline;
+}
+
+.form-container form p a{
+   color:rgb(182, 36, 63);
+}
+.form-container form p a:hover{
+   color:crimson;
+}
+
+.form-container form .error-msg{
+   margin:10px 0;
+   display: block;
+   background: crimson;
+   color:#fff;
+   border-radius: 5px;
+   font-size: 15px;
+   padding:10px;
+   font-weight: bolder;
+   letter-spacing: 0.3px;
+}
+
+
+.error-msg , form input{
+   background: red;
+}
+
+
+

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Open+Sans:wght@300;400&display=swap');
+
+/* variables in css */
+
+:root{
+    --header-height : 3rem;
+    --nav-width : 68px;
+
+    /* colors */
+
+    --first-color : #0fe5cf;
+    --first-color-light : #afa5d9;
+    --white-color : #f7f6fb;
+
+    --body-font : 'DM Sans', sans-serif;
+    --normal-font-size : 1rem;
+
+    /* Z Index */
+    --z-index : 100;
+
+    /* Transition */
+    --transition-all : all 0.5s ease;
+
+}
+
+
+/* base */
+
+
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+        position: relative; 
+            font-family: var(--body-font);
+            font-size: var(--normal-font-size);
+            transition: var(--transition-all);
+}
+
+*{
+    text-decoration: none;
+}
+
+/*  side-bar */
+
+/* main container of side-bar */
+
+.container{    
+    height: 100vh;
+    width: 5rem;
+    padding: 1rem 0 0 0;
+    margin: 0;    
+    background-color: #202225;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.container ul{
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.container ul li{
+    position: relative;
+    height: 3.5em;
+    padding: 1rem;
+    background-color: #36393F;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+.dark{
+    margin-top: auto;
+    bottom: 1rem;
+}
+
+/*   (1) messege alert , (2) hover effects , (3) click markers ,*/
+
+/* (1) */
+/* , .li-item:nth-child(4)::after ,.li-item:nth-child(6)::after  */
+.li-item:nth-child(2)::after{
+    height: 10px;
+    width: 10px;
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: -17px;
+    background-color: red;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/* (2) */
+.li-item:hover{
+    background-color: var(--first-color);
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.li-item:hover::after{
+    height: 25px;
+    width: 11px;
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: 15px;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/* (3) */
+.active::before{
+    content: hidden;
+    position: absolute;
+    left: -33px;
+    top: -6px;
+    content: "";
+    height: 40px;
+    width: 11px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: 0.5s;
+    z-index: 171;
+}
+
+/* -----------tool-tip-css------------ */
+
+.each-item{
+    position: relative;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+}
+
+.each-item i{
+    font-size: 1.5rem;
+    color: var(--white-color);
+}
+
+.cart{
+    color:rgb(133, 107, 107);
+}
+
+.each-item span{
+    width: auto;
+    padding: 5px 12px;
+    position: absolute;
+    left: 4.5rem;
+    visibility:hidden;
+    font-weight:500;
+    font-family: 'DM sans', sans-serif;
+    color: var(--white-color);
+    text-decoration: none;
+    background-color: black;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.each-item span::before{
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: -5px;
+    width: 12px;
+    background-color: black;
+    transform: rotate(45deg) translateY(-50%);
+    height: 10px;
+    width: 10px;
+}
+
+.each-item:hover span{
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+

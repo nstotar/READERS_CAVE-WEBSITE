@@ -1,0 +1,222 @@
+/* Google Fonts Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 10;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 33px;
+    padding:auto;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(135deg, #43CBFF 10%, #9708CC 100%); 
+} 
+/* .product-card {
+  position: relative;
+  max-width: 355px;
+  width: 100%;
+  height: 60%;
+  border-radius: 25px;
+  border-left: 5% #333;
+  padding: 20px 30px 30px 30px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(15, 15, 15, 0.879);
+  z-index: 3;
+  overflow: hidden;
+} */
+.product-card {
+  margin: 1rem;
+  position: relative;
+  max-width: 400px;
+  width: 60%;
+  height: 60%;
+  border-radius: 25px;
+  border-left: 5% #333;
+  padding: 20px 20px 30px 30px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(15, 15, 15, 0.879);
+  z-index: 4;
+  overflow: hidden;
+  justify-items: center;
+}
+.product-card .logo-cart{
+  display: flex;
+  color: #171716;
+  align-items: center;
+  font-size: large;
+  font-weight:800;
+  font-family: 'Segoe UI';
+  justify-content:space-evenly;
+}
+.product-card .logo-cart i{
+  font-size: 27px;
+  color: #3311dc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.product-card .logo-cart i:hover{
+  color: #333;
+}
+.product-card .main-images{
+  position:relative;
+  height: 30%;
+}
+.product-card .main-images img{
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  /* transform: rotate(18deg); */
+  left: 12px;
+  top: -40px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.product-card .main-images img.active{
+  opacity: .7;
+}
+.product-card .shoe-details .shoe_name{
+  font-size: 24px;
+  font-weight: 500;
+  color: #190a04;
+}
+.product-card .shoe-details p{
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  text-align: justify;
+}
+/* .product-card .shoe-details .stars i{
+  margin: 0 -1px;
+  color: #333;
+} */
+.product-card .color-price .color-option{
+  display: flex;
+  align-items: center;
+}
+.color-price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.color-price .color-option .color{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-right: 8px;
+}
+.color-option  .circles{
+  display: flex;
+}
+.color-option  .circles .circle{
+  height: 18px;
+  width: 18px;
+  background: #07f1b7;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+/* .color-option  .circles .circle.blue.active{
+  box-shadow: 0 0 0 2px #fff,
+               0 0 0 4px #0071C7;
+}
+.color-option  .circles .circle.pink{
+  background: #FA1795;
+}
+.color-option  .circles .circle.pink.active{
+  box-shadow: 0 0 0 2px #fff,
+               0 0 0 4px #FA1795;
+}
+.color-option  .circles .circle.yellow{
+  background: #F5DA00;
+}
+.color-option  .circles .circle.yellow.active{
+  box-shadow: 0 0 0 2px #fff,
+               0 0 0 4px #F5DA00;
+} */
+.color-price .price{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.color-price .price .price_num{
+  font-size: 25px;
+  font-weight: 600;
+  color: #1fc5d4;
+}
+.color-price .price .price_letter{
+  font-size: 10px;
+  font-style: bold;
+  font-weight: 600;
+  margin-top: -4px;
+  color: #096775;
+}
+.product-card .button{
+  position: relative;
+  height: 50px;
+  width: 100%;
+  border-radius: 25px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.product-card .button .button-layer{
+  position: absolute;
+  height: 100%;
+  width: 300%;
+  left: -100%;
+  background-image: linear-gradient(135deg,#08cc8e, #43CBFF,#08cc8e, #43CBFF );
+  transition: all 0.4s ease;
+  border-radius: 35PX;
+}
+ /* .product-card:hover>.main-images{
+  width: 400px;
+} */
+.product-card:hover>.main-images{
+  border-radius: 50%;
+width: 450px;
+height: 259px;
+}
+.product-card:hover{
+  background-image:  linear-gradient(135deg,#9708CC, #43CBFF,#9708CC, #43CBFF );
+  font-size: large;
+  font-weight: 700;
+
+}
+/* 
+@keyframes hoverShake {
+  0% {transform: skew(0deg,0deg);}
+  25% {transform: skew(5deg, 5deg);}
+  75% {transform: skew(-5deg, -5deg);}
+  100% {transform: skew(0deg,0deg);}
+} */
+.product-card .button button{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(228, 236, 233);
+}
+.button .button-layer:hover{
+  height: 90%;
+  width: 100%;
+  left: -100%;
+  left: 23rem;
+  box-sizing: border-box;
+  background-image: linear-gradient(135deg,#9708CC, #43CBFF,#9708CC, #43CBFF );
+  transition: all 0.4s ease;
+  border-radius: 70PX;
+ }
